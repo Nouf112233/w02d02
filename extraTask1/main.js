@@ -8,8 +8,20 @@ const items  = [{
   
   const addPurchases = (arr) => {
     let totalPur= arr.reduce((acc,value,index)=>{
-        acc+=value.purchasePrice;
+        return acc+=value.purchasePrice;
     },0);
     console.log(totalPur);
+  };
+
+  const sortNumbers = (arr) => {
+    arr.sort(function(a, b){return a-b});
+    console.log(arr);
+   
+  };
+
+  const sortBackwards = (arr) => {
+    arr.sort(function(a, b){return b-a});
+    console.log(arr);
+   
   };
   
